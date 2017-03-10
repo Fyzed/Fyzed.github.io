@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style> 
+	*{margin:0;padding:0;}
+	body{background: url(banner01.jpg) 0 0 no-repeat;}
+	ul{list-style: none;}
+	.menu{width: 41px;height: 190px;background: #61666c;position: fixed;top: 0;left: 0;transition: all 0.6s ease; }
+	.menu:hover{width: 250px;height: 100%;}
+	.logo{height: 100px;width: 100%;}
+	.mn-m{width: 20px;height: 20px;position: absolute;top: 26px;left: 50%; background: url(photo.png) 0 0 no-repeat; margin-left: -10px;}
+	.mn-e{width: 20px;height: 20px;position: absolute;top: 57px;left: 50%; background: url(photo.png) -20px 0 no-repeat; margin-left: -8px;}
+	.mn-n{width: 20px;height: 20px;position: absolute;top: 89px;left: 50%; background: url(photo.png) -40px 0 no-repeat; margin-left: -8px;}
+	.mn-u{width: 20px;height: 20px;position: absolute;top: 120px;left: 50%; background: url(photo.png) -60px 0 no-repeat; margin-left: -8px;}
+	.logo-img{width: 166px;height: 21px;background: url(photo.png) 0 -120px no-repeat;position:absolute;top: 40px;left: 40px;opacity: 0;}
+	.menu:hover .mn-m{animation: mn-m 1.2s ease;animation-fill-mode:forwards;}
+	.menu:hover .mn-e{animation: mn-e 1.2s ease;animation-fill-mode:forwards;}
+	.menu:hover .mn-n{animation: mn-n 1.2s ease;animation-fill-mode:forwards;}
+	.menu:hover .mn-u{animation: mn-u 1.2s ease;animation-fill-mode:forwards;}
+	.menu:hover .logo-img{opacity: 1;transition: all 0.5s ease 1s;}
+	@keyframes mn-m{0%{top: 26px;left: 50%;} 50%{top:40px; left:56px; opacity:1;} 100%{top:40px;left: 36px;opacity: 0;}}
+	@keyframes mn-e{0%{top: 57px;left: 50%;} 50%{top:40px; left:103px; opacity:1;} 100%{top:40px;left: 83px;opacity: 0;}}
+	@keyframes mn-n{0%{top: 89px;left: 50%;} 50%{top:40px; left:149px; opacity:1;} 100%{top:40px;left: 169px;opacity: 0;}}
+	@keyframes mn-u{0%{top: 120px;left: 50%;} 50%{top:40px; left:196px; opacity:1;} 100%{top:40px;left: 216px;opacity: 0;}}
+	.list{width: 100%;visibility: hidden;opacity: 0;transition: all 0.3s ease;}
+	.menu:hover .list{opacity: 1;visibility: inherit;}
+	.list .mn-li{width: 100%;height: 50px;position: relative;}
+	.mn-a{width: 100%;height: 100%;background: #61666c;display:block;font-size: 14px;line-height: 50px;color: #fff;text-align:center;text-decoration: none;transition:all 0.3s ease;}
+	 .mn-li:hover .mn-a{background: white;color: #61666c;}
+	 .nav-bg{width: 250px;height: 100%;background: #171717;position: fixed;left: 250px;top: 0;transition: all 0.5s ease;opacity: 0;visibility: hidden;}
+	 .mn-li:hover .nav-bg{opacity: 1;visibility: inherit;}
+	 .nav-li{width: 100%;height: 100px;position: relative;border-bottom: 1px solid #2e2f29;line-height: 100px;text-align: center;}
+	 .nav-li .nav-a{color: #949393;text-decoration: none;position: absolute;top: 10px; transition: all 0.5s ease;left: 0;margin-left: 45%;}
+	 .nav-li:hover{background: #000;}
+	 .mn-li:hover .nav-a{top: 0;color: #fff; }
+	 .nav-li:hover .nav-a{animation: nav-a 0.6s ease 0s 1 ; animation-fill-mode: forwards;}
+	 @keyframes nav-a{0%{left:0;} 30%{left: 5px;} 80%{left: -1px;} 100%{left: 0;}}
+	 .nav-ll{width: 100%;height: 49px;position: relative;border-bottom: 1px solid #2e2f29;line-height: 49px;text-align: center;top: 10;}
+	 .nav-ll .nav-a1{text-decoration: none;color: #949393; position: absolute; left: 0;margin-left: 40%;top: 10px;transition: all 0.5s ease;} 
+	 .mn-li:hover .nav-a1{top: 0;color: #fff; }
+	 .mn-li:hover .nav-ll{top:0;  }
+	 .nav-ll:hover{background: #000;}
+	 .nav-ll:hover .nav-a1{animation: nav-a 0.6s ease 0s 1 ; animation-fill-mode: forwards;}
+	 @keyframes nav-a{0%{left:0;} 30%{left: 5px;} 80%{left: -1px;} 100%{left: 0;}}
+	 .ul-2{position: absolute;top: 197px;position: relative; }
+	 .ul-3{position: absolute;top: 250px;position: relative; }
+	 .nav-l{width: 100%;height: 49px;position: relative;border-bottom: 1px solid #2e2f29;line-height: 49px;text-align: center;top: 10;}
+	 .nav-l .nav-a2{text-decoration: none;color: #949393; position: absolute; left: 0;margin-left: 40%;top: 10px;transition: all 0.5s ease;} 
+	 .mn-li:hover .nav-a2{top: 0;color: #fff; }
+	 .mn-li:hover .nav-l{top:0; }
+	 .nav-l:hover{background: #000;}
+	 .nav-l:hover .nav-a2{animation: nav-a 0.6s ease 0s 1 ; animation-fill-mode: forwards;}
+	 @keyframes nav-a{0%{left:0;} 30%{left: 5px;} 80%{left: -1px;} 100%{left: 0;}}
+	 .ul-4{position: absolute;top: 299px;position: relative; }
+	 .nav-lli{width: 100%;height: 49px;position: relative;border-bottom: 1px solid #2e2f29;line-height: 49px;text-align: center;top: 10;}
+	 .nav-lli .nav-a3{text-decoration: none;color: #949393; position: absolute; left: 0;margin-left: 40%;top: 10px;transition: all 0.5s ease;} 
+	 .mn-li:hover .nav-a3{top: 0;color: #fff; }
+	 .mn-li:hover .nav-lli{top:0; }
+	 .nav-lli:hover{background: #000;}
+	 .nav-lli:hover .nav-a3{animation: nav-a 0.6s ease 0s 1 ; animation-fill-mode: forwards;}
+	 @keyframes nav-a{0%{left:0;} 30%{left: 5px;} 80%{left: -1px;} 100%{left: 0;}}
+	 .ul-5{position: absolute;top: 349px;position: relative; }
+	 .nav-llii{width: 100%;height: 49px;position: relative;border-bottom: 1px solid #2e2f29;line-height: 49px;text-align: center;top: 10;}
+	 .nav-llii .nav-a4{text-decoration: none;color: #949393; position: absolute; left: 0;margin-left: 40%;top: 10px;transition: all 0.5s ease;} 
+	 .mn-li:hover .nav-a4{top: 0;color: #fff; }
+	 .mn-li:hover .nav-llii{top:0; }
+	 .nav-llii:hover{background: #000;}
+	 .nav-llii:hover .nav-a4{animation: nav-a 0.6s ease 0s 1 ; animation-fill-mode: forwards;}
+	 @keyframes nav-a{0%{left:0;} 30%{left: 5px;} 80%{left: -1px;} 100%{left: 0;}}
+
+	</style>
+</head>
+<body>
+		 
+	 	<div class="menu">
+			<div class="logo">
+					<div class="mn-m"></div>
+					<div class="mn-e"></div>
+					<div class="mn-n"></div>
+					<div class="mn-u"></div>
+					<div class="logo-img"></div>
+				</div>
+			<ul class="list">
+				<li class="mn-li"><a href="#" class="mn-a">大帆首页</a></li>
+				<li class="mn-li">
+					<a href="#" class="mn-a">车型展示</a>
+					<div class="nav-bg">
+						<ul class="nav-list">
+							<li class="nav-li">
+								<a href="#" class="nav-a">迈威</a>
+							</li>
+							<li class="nav-li">
+								<a href="#" class="nav-a">力帆820</a>
+							</li>
+							<li class="nav-li">
+								<a href="#" class="nav-a">乐途</a>
+							</li>
+							<li class="nav-li">
+								<a href="#" class="nav-a">力帆X60</a>
+							</li>
+							<li class="nav-li">
+								<a href="#" class="nav-a">力帆X50</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="mn-li">
+					<a href="#" class="mn-a">品牌专区</a>
+					<div class="nav-bg">
+						<ul class="ul-2">
+							 <li class="nav-ll"><a href="#" class="nav-a1">公司简介</a></li>
+							 <li class="nav-ll"><a href="#" class="nav-a1">品牌历史</a></li>
+							 <li class="nav-ll"><a href="#" class="nav-a1">科技创新</a></li>
+						 </ul>		
+					</div>
+				</li>
+				<li class="mn-li">
+					<a href="#" class="mn-a">资讯中心</a>
+					<div class="nav-bg">
+						<ul class="ul-3">
+							<li class="nav-l"><a href="#" class="nav-a2">活动专区</a></li>
+							<li class="nav-l"><a href="#" class="nav-a2">资讯动态</a></li>
+						</ul>
+
+					</div>
+				</li>
+				<li class="mn-li">
+					<a href="#" class="mn-a">服务指南</a>
+					<div class="nav-bg">
+					<ul class="ul-4">
+						<li class="nav-lli"><a href="#" class="nav-a3">经销商查询</a></li>
+						<li class="nav-lli"><a href="#" class="nav-a3">服务商查询</a></li>
+						<li class="nav-lli"><a href="#" class="nav-a3">预约驾驶</a></li>
+					</ul>
+					</div>
+				</li>
+				<li class="mn-li">
+					<a href="#" class="mn-a">车主专区</a>
+					<div class="nav-bg">
+						<ul class="ul-5">
+							<li class="nav-llii"><a href="#" class="nav-a4">交流专区</a></li>
+							<li class="nav-llii"><a href="#" class="nav-a4">下载专区</a></li>
+						 
+						</ul>
+					</div>
+				</li>
+				<li class="mn-li"><a href="#" class="mn-a">联系力帆</a></li>
+			</ul>
+	 	</div>
+</body>
+</html>
