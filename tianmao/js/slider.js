@@ -11,7 +11,7 @@
  
     oBtn.addEventListener('touchstart',function(e){
 		if(flag==1){
-			console.log(e);
+			
 			var touches = e.touches[0];
             console.log(oBtn.offsetLeft)
 			oW = touches.clientX - oBtn.offsetLeft;
