@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="wap-font-scale" content="no">
+	<title>Document</title>
+	<script src="js/flexible.js"></script>
+	<link rel="stylesheet" href="css/index.css">  
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/jquery.min-3.0.js"></script>
+	<script> 
+			function zed(data){
+				var search = document.querySelector('.search');
+				var box = document.querySelector('.box');
+				var html="";
+
+			if(data.s.length){
+					box.style.display="block";
+				for(var i =0;i<data.s.length;i++){ 
+					html+='<li><a href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd='+data.s[i]+'">'+data.s[i]+'</a></li>' 
+					 }
+				 box.innerHTML = html;
+			}else{
+				box.style.display="none";
+			} 	
+		};
+	</script>
+</head>
+<body>
+		<header>
+				<a href="javascript:;" class="tag"> </a>
+				 <div class="inp">
+					<input type="text" placeholder="搜索商品/店铺" class="submit">
+					<span class="sosuo"></span>
+				 </div>
+				 <a href="login.html" class="login">登录</a>
+		</header>
+
+		<footer>
+			<a href="javascript:;"><img src="img/xz.png" alt=""></a>
+			<div class="close">ⅹ</div>
+		</footer>
+
+		<!--go top-->
+			<a href="javascript:;" class="top"><img src="img/icon_top.png" alt=""></a>
+		<!--go top end-->
+
+		<div class="sub-sousuo"> 
+				<div class="sub-top">
+						<a href="index.html" class="back"> < </a>
+						<input type="text" placeholder="春季新款连衣裙" class="search">
+						<a href="javascript:void;" class="click"><img src="img/icon_search2.png" alt=""></a>
+				</div>
+				<div class="sub-bto">
+						<h3><img src="img/hot-icon_03.png" alt="">热门搜索</h3>
+						<ul class="hot">
+							<li><a href="#">夹克男</a></li>
+							<li><a href="#">女仔裤女</a></li>
+							<li><a href="#">乳胶枕</a></li>
+							<li><a href="#">扫地机器人</a></li>
+							<li><a href="#">客厅登</a></li>
+							<li><a href="#">运动鞋</a></li>
+							<li><a href="#">文胸</a></li>
+							<li><a href="#">单肩包</a></li>
+							<li><a href="#">打底裤</a></li>
+							<li><a href="#">奶粉</a></li>
+							<li><a href="#">行车记录仪</a></li>
+							<li><a href="#">洗发水</a></li>
+							<li><a href="#">口红</a></li>
+						</ul>
+				</div> 
+				<ul class="box">
+				 
+				</ul> 
+		</div>
+
+		<!--left menu-->
+				<div class="left-menu">
+					<div class="bclick">
+							<p>点击此返回</p>
+					</div>
+						<div class="left-main">
+								<h3>全部分类</h3>
+						<div class="con">
+								<ul class="nav-left">
+									<li class="active">为您推荐</li><li>国际大牌</li><li>天猫国际</li><li>女装</li><li>女鞋</li>
+									<li>男装</li><li>男鞋</li><li>内衣</li><li>母婴</li><li>手机</li>
+									<li>数码</li><li>家电</li><li>美妆</li><li>箱包</li><li>运动</li>
+									<li>户外</li><li>家装</li><li>家纺</li><li>家居</li><li>饰品</li>
+									<li>食品</li><li>生鲜</li><li>汽车摩托</li><li>医药</li><li>图书</li>
+									<li>通信</li><li>洗护</li><li>乐器</li>
+								</ul>
+					<ul class="nav-right">
+							<li class="show"> 
+								<div class="cell-list">
+										 <h2>女装</h2>
+										<ul class="cloths">
+											<li><a href="#"><img src="img/a.webp" alt=""><p>羽绒服</p></a></li>
+											<li><a href="#"><img src="img/b.webp" alt=""><p>棉衣</p></a></li>
+											<li><a href="#"><img src="img/c.webp" alt=""><p>毛呢外套</p></a></li>
+											<li><a href="#"><img src="img/d.webp" alt=""><p>衬衫</p></a></li>
+											<li><a href="#"><img src="img/ee.webp" alt=""><p>针织衫</p></a></li>
+											<li><a href="#"><img src="img/g.webp" alt=""><p>牛仔裤</p></a></li>
+										</ul>
+								</div>
+								<div class="cell-list">
+										 <h2>女鞋</h2>
+										<ul class="cloths">
+											<li><a href="#"><img src="img/b1.webp" alt=""><p>短靴</p></a></li>
+											<li><a href="#"><img src="img/b2.webp" alt=""><p>长靴</p></a></li>
+											<li><a href="#"><img src="img/b3.webp" alt=""><p>中筒靴</p></a></li> 
+										</ul>
+								</div>
+							<div class="cell-list">
+										 <h2>男装</h2>
+										<ul class="cloths">
+											<li><a href="#"><img src="img/c1.webp" alt=""><p>新品羽绒服</p></a></li>
+											<li><a href="#"><img src="img/c2.webp" alt=""><p>夹克</p></a></li>
+											<li><a href="#"><img src="img/c3.webp" alt=""><p>风衣</p></a></li>
+											<li><a href="#"><img src="img/c4.webp" alt=""><p>羊绒衫</p></a></li>
+											<li><a href="#"><img src="img/c5.webp" alt=""><p>棉衣</p></a></li>
+											<li><a href="#"><img src="img/c6.webp" alt=""><p>修身休闲裤</p></a></li>
+										</ul>
+								</div>
+								<div class="cell-list">
+										 <h2>家电</h2>
+										<ul class="cloths">
+											<li><a href="#"><img src="img/d1.webp" alt=""><p>平板电视</p></a></li>
+											<li><a href="#"><img src="img/d2.webp" alt=""><p>洗衣机</p></a></li>
+											<li><a href="#"><img src="img/d3.webp" alt=""><p>冰箱</p></a></li>
+											<li><a href="#"><img src="img/d4.webp" alt=""><p>电饭煲</p></a></li>
+											<li><a href="#"><img src="img/d5.webp" alt=""><p>空气净化器</p></a></li>
+											<li><a href="#"><img src="img/d6.webp" alt=""><p>扫地机器人</p></a></li>
+										</ul>
+								</div>
+								<div class="cell-list thelast">
+										 <h2>美妆</h2>
+										<ul class="cloths">
+											<li><a href="#"><img src="img/f1.webp" alt=""><p>护肤套装</p></a></li>
+											<li><a href="#"><img src="img/f2.webp" alt=""><p>面膜</p></a></li>
+											<li><a href="#"><img src="img/f3.webp" alt=""><p>身体护理</p></a></li> 
+										</ul>
+								</div>
+							</li>
+							<li >
+									<div class="cell-list">
+										 <h2>女装</h2>
+										<ul class="icon">
+											<li><a href="#"><img src="img/ic1.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic2.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic3.webp" alt=""><p</a></li>
+											<li><a href="#"><img src="img/ic4.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic5.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic6.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic7.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic8.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic9.webp" alt=""><p</a></li>
+											<li><a href="#"><img src="img/ic10.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic11.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic12.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic13.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic14.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic15.webp" alt=""><p</a></li>
+											<li><a href="#"><img src="img/ic16.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic17.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic18.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic19.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic20.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic21.webp" alt=""><p</a></li>
+											<li><a href="#"><img src="img/ic22.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic23.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic24.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic25.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic26.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic27.webp" alt=""><p</a></li>
+											<li><a href="#"><img src="img/ic28.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic29.webp" alt=""></a></li>
+											<li><a href="#"><img src="img/ic30.webp" alt=""></a></li> 
+										</ul>
+								</div>
+							</li>
+							<li >	
+								<div class="cell-list">
+										 <h2>女装</h2>
+										<ul class="cloths">
+											<li><a href="#"><img src="img/muy.webp" alt=""><p>德国Aptamil</p></a></li>
+											<li><a href="#"><img src="img/muy.webp" alt=""><p>荷兰诺优能</p></a></li>
+											<li><a href="#"><img src="img/muy.webp" alt=""><p>荷兰诺优能</p></a></li>
+											<li><a href="#"><img src="img/muy.webp" alt=""><p>荷兰诺优能</p></a></li>
+											<li><a href="#"><img src="img/muy.webp" alt=""><p>荷兰诺优能</p></a></li>
+											<li><a href="#"><img src="img/muy.webp" alt=""><p>荷兰诺优能</p></a></li>
+											<li><a href="#"><img src="img/muy.webp" alt=""><p>德国Aptamil</p></a></li>
+											<li><a href="#"><img src="img/muy.webp" alt=""><p>荷兰诺优能</p></a></li>
+											<li><a href="#"><img src="img/muy.webp" alt=""><p>荷兰诺优能</p></a></li>
+											<li><a href="#"><img src="img/muy.webp" alt=""><p>荷兰诺优能</p></a></li>
+											<li><a href="#"><img src="img/muy.webp" alt=""><p>荷兰诺优能</p></a></li>
+											<li><a href="#"><img src="img/muy.webp" alt=""><p>荷兰诺优能</p></a></li>
+											<li><a href="#"><img src="img/muy.webp" alt=""><p>荷兰诺优能</p></a></li>
+											<li><a href="#"><img src="img/muy.webp" alt=""><p>荷兰诺优能</p></a></li>
+											<li><a href="#"><img src="img/muy.webp" alt=""><p>荷兰诺优能</p></a></li>
+											<li><a href="#"><img src="img/muy.webp" alt=""><p>荷兰诺优能</p></a></li>
+											<li><a href="#"><img src="img/muy.webp" alt=""><p>荷兰诺优能</p></a></li>
+											<li><a href="#"><img src="img/muy.webp" alt=""><p>荷兰诺优能</p></a></li>
+										</ul>
+								</div>
+							</li>
+							<li>
+								<div class="cell-list">
+										 <h2>风格馆</h2>
+										<ul class="cloths">
+											<li><a href="#"><img src="img/feng.webp" alt=""><p>欧美风</p></a></li>
+											<li><a href="#"><img src="img/feng1.webp" alt=""><p>甜美风</p></a></li>
+											<li><a href="#"><img src="img/feng2.webp" alt=""><p>文艺风</p></a></li>
+											<li><a href="#"><img src="img/feng3.webp" alt=""><p>学院风</p></a></li>
+											<li><a href="#"><img src="img/feng4.webp" alt=""><p>街头风</p></a></li>
+											<li><a href="#"><img src="img/feng5.webp" alt=""><p>田园风</p></a></li>
+										</ul>
+								</div>
+								<div class="cell-list">
+										 <h2>女装</h2>
+										<ul class="cloths">
+											<li><a href="#"><img src="img/a.webp" alt=""><p>羽绒服</p></a></li>
+											<li><a href="#"><img src="img/b.webp" alt=""><p>棉衣</p></a></li>
+											<li><a href="#"><img src="img/c.webp" alt=""><p>毛呢外套</p></a></li>
+											<li><a href="#"><img src="img/d.webp" alt=""><p>衬衫</p></a></li>
+											<li><a href="#"><img src="img/ee.webp" alt=""><p>针织衫</p></a></li>
+											<li><a href="#"><img src="img/g.webp" alt=""><p>牛仔裤</p></a></li>
+											<li><a href="#"><img src="img/c.webp" alt=""><p>毛呢外套</p></a></li>
+											<li><a href="#"><img src="img/d.webp" alt=""><p>衬衫</p></a></li>
+											<li><a href="#"><img src="img/ee.webp" alt=""><p>针织衫</p></a></li>
+											<li><a href="#"><img src="img/c.webp" alt=""><p>毛呢外套</p></a></li>
+											<li><a href="#"><img src="img/d.webp" alt=""><p>衬衫</p></a></li>
+											<li><a href="#"><img src="img/ee.webp" alt=""><p>针织衫</p></a></li>
+											 
+										</ul>
+								</div>
+							</li>
+							<li>
+								<div class="cell-list">
+										 <h2>女鞋</h2>
+										<ul class="cloths">
+											<li><a href="#"><img src="img/b1.webp" alt=""><p>短靴</p></a></li>
+											<li><a href="#"><img src="img/b2.webp" alt=""><p>长靴</p></a></li>
+											<li><a href="#"><img src="img/b3.webp" alt=""><p>中筒靴</p></a></li>
+											<li><a href="#"><img src="img/b1.webp" alt=""><p>短靴</p></a></li>
+											<li><a href="#"><img src="img/b2.webp" alt=""><p>长靴</p></a></li>
+											<li><a href="#"><img src="img/b3.webp" alt=""><p>中筒靴</p></a></li>
+											<li><a href="#"><img src="img/b1.webp" alt=""><p>短靴</p></a></li>
+											<li><a href="#"><img src="img/b2.webp" alt=""><p>长靴</p></a></li>
+											<li><a href="#"><img src="img/b3.webp" alt=""><p>中筒靴</p></a></li>
+											<li><a href="#"><img src="img/b1.webp" alt=""><p>短靴</p></a></li>
+											<li><a href="#"><img src="img/b2.webp" alt=""><p>长靴</p></a></li>
+											<li><a href="#"><img src="img/b3.webp" alt=""><p>中筒靴</p></a></li> 
+										</ul>
+								</div>
+							</li>
+
+							<li >
+								<div class="cell-list">
+										 <h2>羽绒服</h2>
+										<ul class="cloths">
+											<li><a href="#"><img src="img/a.webp" alt=""><p>羽绒服</p></a></li>
+											<li><a href="#"><img src="img/b.webp" alt=""><p>棉衣</p></a></li>
+											<li><a href="#"><img src="img/c.webp" alt=""><p>毛呢外套</p></a></li>
+											<li><a href="#"><img src="img/d.webp" alt=""><p>衬衫</p></a></li>
+											<li><a href="#"><img src="img/ee.webp" alt=""><p>针织衫</p></a></li>
+											<li><a href="#"><img src="img/g.webp" alt=""><p>牛仔裤</p></a></li> 
+										</ul>
+								</div>
+									<div class="cell-list">
+										 <h2>棉衣</h2>
+										<ul class="cloths">
+											<li><a href="#"><img src="img/a.webp" alt=""><p>羽绒服</p></a></li>
+											<li><a href="#"><img src="img/b.webp" alt=""><p>棉衣</p></a></li>
+											<li><a href="#"><img src="img/c.webp" alt=""><p>毛呢外套</p></a></li>
+											<li><a href="#"><img src="img/d.webp" alt=""><p>衬衫</p></a></li>
+											<li><a href="#"><img src="img/ee.webp" alt=""><p>针织衫</p></a></li>
+											<li><a href="#"><img src="img/g.webp" alt=""><p>牛仔裤</p></a></li> 
+										</ul>
+								</div>
+									<div class="cell-list">
+										 <h2>外套</h2>
+										<ul class="cloths">
+											<li><a href="#"><img src="img/a.webp" alt=""><p>羽绒服</p></a></li>
+											<li><a href="#"><img src="img/b.webp" alt=""><p>棉衣</p></a></li>
+											<li><a href="#"><img src="img/c.webp" alt=""><p>毛呢外套</p></a></li>
+											<li><a href="#"><img src="img/d.webp" alt=""><p>衬衫</p></a></li>
+											<li><a href="#"><img src="img/ee.webp" alt=""><p>针织衫</p></a></li>
+											<li><a href="#"><img src="img/g.webp" alt=""><p>牛仔裤</p></a></li> 
+										</ul>
+								</div>
+
+							</li>
+							<li>
+								<div class="cell-list">
+										 <h2>高帮鞋</h2>
+										<ul class="cloths">
+											<li><a href="#"><img src="img/s.webp" alt=""><p>高帮皮鞋</p></a></li>
+											<li><a href="#"><img src="img/s.webp" alt=""><p>高帮板鞋</p></a></li>
+											<li><a href="#"><img src="img/s.webp" alt=""><p>高帮工装鞋</p></a></li> 
+										</ul>
+								</div>
+									<div class="cell-list">
+										 <h2>休闲鞋</h2>
+										<ul class="cloths">
+											<li><a href="#"><img src="img/s.webp" alt=""><p>休闲皮鞋</p></a></li>
+											<li><a href="#"><img src="img/s.webp" alt=""><p>休闲板鞋</p></a></li>
+											<li><a href="#"><img src="img/s.webp" alt=""><p>运动休闲鞋</p></a></li> 
+											<li><a href="#"><img src="img/s.webp" alt=""><p>休闲皮鞋</p></a></li>
+											<li><a href="#"><img src="img/s.webp" alt=""><p>休闲板鞋</p></a></li>
+											<li><a href="#"><img src="img/s.webp" alt=""><p>运动休闲鞋</p></a></li> 
+											<li><a href="#"><img src="img/s.webp" alt=""><p>休闲皮鞋</p></a></li>
+											<li><a href="#"><img src="img/s.webp" alt=""><p>休闲板鞋</p></a></li>
+											<li><a href="#"><img src="img/s.webp" alt=""><p>运动休闲鞋</p></a></li> 
+											<li><a href="#"><img src="img/s.webp" alt=""><p>休闲皮鞋</p></a></li>
+											<li><a href="#"><img src="img/s.webp" alt=""><p>休闲板鞋</p></a></li>
+											<li><a href="#"><img src="img/s.webp" alt=""><p>运动休闲鞋</p></a></li> 
+										</ul>
+								</div>		
+							</li>
+							<li>
+								<div class="cell-list">
+										 <h2>文胸</h2>
+										<ul class="cloths">
+											<li><a href="#"><img src="img/web.webp" alt=""><p>文胸套装</p></a></li>
+											<li><a href="#"><img src="img/web.webp" alt=""><p>祖龙涛兄</p></a></li>
+											<li><a href="#"><img src="img/web.webp" alt=""><p>少女文胸</p></a></li>
+											<li><a href="#"><img src="img/web.webp" alt=""><p>文胸套装</p></a></li>
+											<li><a href="#"><img src="img/web.webp" alt=""><p>祖龙涛兄</p></a></li>
+											<li><a href="#"><img src="img/web.webp" alt=""><p>少女文胸</p></a></li>
+											<li><a href="#"><img src="img/web.webp" alt=""><p>文胸套装</p></a></li>
+											<li><a href="#"><img src="img/web.webp" alt=""><p>祖龙涛兄</p></a></li>
+											<li><a href="#"><img src="img/web.webp" alt=""><p>少女文胸</p></a></li> 
+										</ul>
+								</div>
+								<div class="cell-list">
+										 <h2>内衣</h2>
+										<ul class="cloths">
+											<li><a href="#"><img src="img/nei.webp" alt=""><p>男士内裤</p></a></li>
+											<li><a href="#"><img src="img/nei.webp" alt=""><p>男士内裤</p></a></li>
+											<li><a href="#"><img src="img/nei.webp" alt=""><p>男士内裤</p></a></li>
+											<li><a href="#"><img src="img/nei.webp" alt=""><p>男士内裤</p></a></li>
+											<li><a href="#"><img src="img/nei.webp" alt=""><p>男士内裤</p></a></li>
+											<li><a href="#"><img src="img/nei.webp" alt=""><p>男士内裤</p></a></li>
+											<li><a href="#"><img src="img/nei.webp" alt=""><p>男士内裤</p></a></li>
+											<li><a href="#"><img src="img/nei.webp" alt=""><p>男士内裤</p></a></li>
+											<li><a href="#"><img src="img/nei.webp" alt=""><p>男士内裤</p></a></li>
+										</ul>
+								</div>
+							</li>
+					</ul>
+
+
+							</div>
+						</div>
+				</div>
+		<!--left menu end-->
+		<div class="wrap">							 
+			<div class="content"> 
+				<!--banner-->
+					<div class="swiper-container">
+					    <div class="swiper-wrapper">
+					        <div class="swiper-slide"><img src="img/pic_banner_01.webp"></div>
+					        <div class="swiper-slide"><img src="img/pic_banner_02.webp"></div>
+					        <div class="swiper-slide"><img src="img/pic_banner_03.webp"></div>
+					        <div class="swiper-slide"><img src="img/pic_banner_04.webp"></div>
+					        <div class="swiper-slide"><img src="img/pic_banner_05.webp"></div>
+					        <div class="swiper-slide"><img src="img/pic_banner_06.webp"></div>
+					        <div class="swiper-slide"><img src="img/pic_banner_07.webp"></div>
+					        <div class="swiper-slide"><img src="img/pic_banner_08.webp"></div>
+					    </div> 
+					    <div class="swiper-pagination"></div> 
+					</div>
+				<!--banner end-->
+
+				<!--guang gao-->
+					<div class="gd">
+						<a href="javascript:;"><img src="img/gd.gif" alt=""></a>
+					</div>
+				<!--guang gao end-->
+				<!--menu-->
+			<main>
+				<menu>
+						<ul class="nav">
+							<a href="javascript:;"><li><img src="img/inon_pic_03.png" alt=""><span>积分乐园</span></li></a>
+							<a href="javascript:;"><li><img src="img/inon_pic_05.png" alt=""><span>充值</span></li></a>
+							<a href="javascript:;"><li><img src="img/inon_pic_07.png" alt=""><span>天猫国际</span></li></a>
+							<a href="javascript:;"><li><img src="img/inon_pic_09.png" alt=""><span>聚划算</span></li></a>
+							<a href="javascript:;"><li><img src="img/inon_pic_12.png" alt=""><span>天猫超市</span></li></a>
+						</ul>
+						<ul class="nav">
+							<a href="javascript:;"><li><img src="img/menu_icon_03.png" alt=""><span>免费试用</span></li></a>
+							<a href="javascript:;"><li><img src="img/menu_icon_05.png" alt=""><span>尤物</span></li></a>
+							<a href="javascript:;"><li><img src="img/menu_icon_07.png" alt=""><span>粉丝趴</span></li></a>
+							<a href="javascript:;"><li><img src="img/menu_icon_09.png" alt=""><span>手机新品</span></li></a>
+							<a href="javascript:;"><li><img src="img/menu_icon_11.png" alt=""><span>分类</span></li></a>
+						</ul>
+				</menu>
+				<!--menu end-->
+
+				<!--text-move-->
+				<div class="text-move">
+						<div class="text-left">
+							<a href="#" class="tit"><img src="img/move_pic_03.png" alt=""></a>
+							<div class="border"></div>
+							<a href="#" class="laba"><img src="img/laba_cion.png" alt=""></a>
+						</div>
+						<ul class="text">
+								<li><a href="#">烟熏三文鱼，原装进口39元起</a><a href="#" class="red">原装进口+起始于1918年</a></li>
+								<li><a href="#">烟熏三文鱼，22222222222</a><a href="#" class="red">原装进口+起始于1918年</a></li>
+								<li><a href="#">烟熏三文鱼，33333333333</a><a href="#" class="red">原装进口+起始于1918年</a></li>
+								<li><a href="#">烟熏三文鱼，4444444444</a><a href="#" class="red">原装进口+起始于1918年</a></li>
+						</ul>
+						<div class="text-right"></div>
+				</div>
+				<!--text-move end-->
+
+				<!--queen-->
+				<div class="queen">
+					<img src="img/bg.webp" alt="">
+				</div>
+
+				<div class="goodslist">
+					<ul class="list">
+							<li>
+								<h3>母婴主会场</h3>
+								<img src="img/shoe.webp" alt="">
+								<p>折后在满减</p>
+							</li>
+							<li>
+								<h3>大牌手机</h3>
+								<img src="img/phone.webp" alt="">
+								<p>新品半价抢</p>
+							</li>
+							<li>
+								<h3>美食美酒</h3>
+								<img src="img/ping.webp" alt="">
+								<p>抢50元优惠劵</p>
+							</li>
+							<li>
+								<h3>纸品清洁</h3>
+								<img src="img/clear.webp" alt="">
+								<p>速抢100元劵</p>
+							</li>
+					</ul>
+					<div class="jc">
+					<img src="img/jc.webp" alt="">
+					</div>
+					<ul class="list">
+							<li>
+								<h3>酒食好搭档</h3>
+								<img src="img/meet.webp" alt="">
+								<p>美味配美酒</p>
+							</li>
+							<li>
+								<h3>轻奢派私护</h3>
+								<img src="img/yagao.webp" alt="">
+								<p>对自己好一点</p>
+							</li>
+							<li>
+								<h3>品质男生款</h3>
+								<img src="img/shoes.webp" alt="">
+								<p>品质鞋优生活</p>
+							</li>
+							<li>
+								<h3>零食贱货榜</h3>
+								<img src="img/foot.webp" alt="">
+								<p>全网口碑推荐</p>
+							</li>
+					</ul>
+
+				</div>
+				<!--queen end-->
+ 
+				<div class="list-banner" id="wrapper">
+					<ul class="ba-list">
+							 <li><a href="javascript:;"><img src="img/ban1.webp" alt=""></a></li>
+							 <li><a href="javascript:;"><img src="img/ban2.webp" alt=""></a></li>
+							 <li><a href="javascript:;"><img src="img/ban3.webp" alt=""></a></li> 
+						</ul>
+				</div>
+
+				<div class="cell">
+							<span class="vue"></span>
+							<img src="img/hto.webp" alt="">
+							<span class="title">必抢</span>
+							<span class="vue"></span>
+				</div>
+
+			<!--clothslist-->
+				<div class="clothslist">
+							<ul class="list-one">
+								<li>
+									<h4>38人气榜</h4>
+									<img src="img/baobao.webp" alt="">
+									<span class="first"><em>￥</em><a>369</a></span>
+									 <span><em>￥</em><s>888</s></span>
+								</li>
+								<li>
+									<h4>38进口榜</h4>
+									<img src="img/water.webp" alt="">
+									<span class="first"><em>￥</em><a>270</a></span>
+									 <span><em>￥</em><s>300</s></span>
+								</li>
+								<li>
+									<h4>38新品榜</h4>
+									<img src="img/cloth.webp" alt="">
+									<span class="first"><em>￥</em><a>894</a></span>
+									 <span><em>￥</em><s>1400</s></span>
+								</li>
+								<li>
+									<h4>38达人榜</h4>
+									<img src="img/apple.webp" alt="">
+									<span class="first"><em>￥</em><a>75</a></span>
+									 <span><em>￥</em><s>112</s></span>
+								</li>
+							</ul>
+							<ul class="list-one">
+								<li>
+									<h4>据超值</h4>
+									<img src="img/1.webp" alt="">
+									<span class="first"><em>￥</em><a>118</a></span>
+									 <span><em>￥</em><s>128</s></span>
+								</li>
+								<li>
+									<h4>女神放</h4>
+									<img src="img/2.webp" alt="">
+									<span class="first"><em>￥</em><a>12</a></span>
+									 <span><em>￥</em><s>25</s></span>
+								</li>
+								<li>
+									<h4>邢南卡</h4>
+									<img src="img/4.webp" alt="">
+									<span class="first"><em>￥</em><a>216</a></span>
+									 <span><em>￥</em><s>200</s></span>
+								</li>
+								<li class="last">
+									<h4>哎囤货</h4>
+									<img src="img/3.webp" alt="">
+									<span class="first"><em>￥</em><a>78</a></span>
+									 <span><em>￥</em><s>79</s></span>
+								</li>
+							</ul>
+				</div>
+			<!--clothslist end-->
+
+				<div class="cellT">
+							<span class="vue"></span>
+							<div class="img"><img src="img/two.webp" alt=""></div>
+							<span class="title">潮流酷玩</span>
+							<span class="vue"></span>
+				</div>
+
+				<div class="suning">
+									<a href="javascript:;"><img src="img/sn1.webp" alt=""></a>
+									<a href="javascript:;"><img src="img/sun2.webp" alt=""></a>
+									<a href="javascript:;"><img src="img/it.webp" alt=""></a>
+				</div>
+	
+				<div class="cellThr">
+							<span class="vue"></span>
+							<div class="img"><img src="img/star.webp" alt=""></div>
+							<span class="title">品牌特卖</span>
+							<span class="vue"></span>
+				</div>
+
+				<div class="pinpai">
+						<a href="javascript:;"><img src="img/pinpai.webp" alt=""></a>
+						<a href="javascript:;"><img src="img/pinpai2.webp" alt=""></a>
+				</div>
+
+				<div class="cellF">
+							<span class="vue"></span>
+							<div class="img"><img src="img/tan.webp" alt=""></div>
+							<span class="title">品牌资讯</span>
+							<span class="vue"></span>
+				</div>
+
+				<div class="zixun">
+					<a href="javascript:;"><img src="img/zixun.webp" alt=""></a>
+					<a href="javascript:;"><img src="img/zixun2.webp" alt=""></a>
+					<a href="javascript:;"><img src="img/zixun3.webp" alt=""></a>
+				</div>
+				<div class="HD">
+					<a href="javascript:;"><img src="img/HD.webp" alt=""></a>
+				</div>
+
+					<div class="cellS">
+							<span class="vue"></span>
+							<div class="img"><img src="img/line.webp" alt=""></div>
+							<span class="title">便捷生活</span>
+							<span class="vue"></span>
+					</div>
+
+				<div class="line">
+					 	<div class="line-left">
+						<a href="javascript:;"><img src="img/milk.webp" alt=""></a>
+					 	</div>
+					 	<div class="line-right">
+									<a href="javascript:;"><img src="img/left.webp" alt=""></a>
+									<a href="javascript:;"><img src="img/left2.webp" alt=""></a>
+					 	</div>
+				</div>
+
+				<div class="cellSe">
+							<span class="vue"></span>
+							<div class="img"><img src="img/sea.webp" alt=""></div>
+							<span class="title">国际海购</span>
+							<span class="vue"></span>
+				</div>
+
+				<div class="sea">
+						<a href="javascript:;"><img src="img/sea1.webp" alt=""></a>
+						<a href="javascript:;"><img src="img/sea2.webp" alt=""></a>
+						<a href="javascript:;"><img src="img/sea3.webp" alt=""></a>
+				</div>
+
+				<div class="cellE">
+							<span class="vue"></span>
+							<div class="img"><img src="img/E.webp" alt=""></div>
+							<span class="title">精选市场</span>
+							<span class="vue"></span>
+				</div>
+
+				<div class="jxcity">
+					
+						<div class="jx-top">
+								<a href="javascript:;"><img src="img/jx1.webp" alt=""></a>
+								<a href="javascript:;"><img src="img/jx2.webp" alt=""></a>
+								<a href="javascript:;"><img src="img/jx3.webp" alt=""></a>
+								<a href="javascript:;"><img src="img/jx4.webp" alt=""></a>
+						</div>
+						<div class="jx-bot">
+								<a href="javascript:;"><img src="img/jxz.webp" alt=""></a>
+								<a href="javascript:;"><img src="img/jxr.webp" alt=""></a>
+						</div>
+				</div>
+
+				<div class="cellN">
+							<span class="vue"></span>
+							<div class="img"><img src="img/love.webp" alt=""></div>
+							<span class="title">爱生活</span>
+							<span class="vue"></span>
+				</div>
+
+				<div class="love">
+						<a href="javascript:;"><img src="img/love1.webp" alt=""></a>
+						<a href="javascript:;"><img src="img/love2.webp" alt=""></a>
+						<a href="javascript:;"><img src="img/love3.webp" alt=""></a>
+						<a href="javascript:;"><img src="img/love5.webp" alt=""></a>
+				</div>
+
+				<div class="cellTen">
+							<span class="vue"></span>
+							<div class="img"><img src="img/suo.webp" alt=""></div>
+							<span class="title">热门行业</span>
+							<span class="vue"></span>
+				</div>
+
+				<div class="hot">
+						<div class="hot-top">
+							<div class="top-left">
+									<div class="tl">
+											<h5>天猫书城</h5>
+											<p>百万畅销好书</p>
+									</div>
+									<div class="tr-img">
+												<img src="img/story.webp" alt="">
+									</div>
+							</div>
+							<div class="top-right">
+									<div class="tl">
+											<h5>天猫女装</h5>
+											<p>品质精选</p>
+									</div>
+									<div class="tr-img">
+												<img src="img/pclo.webp" alt="">
+									</div>
+							</div>
+							 
+						</div>
+						<div class="hot-bto">
+								<ul>
+										<li>
+											<div class="bto-s"> 
+													<h5>天猫内衣</h5>
+													<p>性感新主张</p>
+													<img src="img/shuiyi.webp" alt=""> 
+											</div>
+											<div class="bto-x">
+													<h5>母婴玩具</h5>
+													<p>辣妈萌宝精选</p>
+													<img src="img/baby.webp" alt="">
+											</div>
+										</li>
+										<li>
+											<div class="bto-s"> 
+													<h5>美妆</h5>
+													<p>好货免费试</p>
+													<img src="img/fu.webp" alt=""> 
+											</div>
+											<div class="bto-x">
+													<h5>天猫男女鞋</h5>
+													<p>热卖鞋履</p>
+													<img src="img/soe.webp" alt="">
+											</div>
+										</li>
+										<li>
+											<div class="bto-s"> 
+													<h5>运动户外</h5>
+													<p>大牌3折起</p>
+													<img src="img/wsoe.webp" alt=""> 
+											</div>
+											<div class="bto-x">
+													<h5>珠宝配饰</h5>
+													<p>是上传他必备</p>
+													<img src="img/zuo.webp" alt="">
+											</div>
+										</li>
+										<li>
+											<div class="bto-s"> 
+													<h5>天猫箱包</h5>
+													<p>给你新时尚</p>
+													<img src="img/bao.webp" alt=""> 
+											</div>
+											<div class="bto-x">
+													<h5>更多</h5>
+													<p>超多好货</p>
+													<img src="img/yi.webp" alt="">
+											</div>
+										</li>
+								</ul>
+						</div>
+				</div>
+
+				<div class="cell11">
+							<span class="vue"></span>
+							<div class="img"><img src="img/wu.webp" alt=""></div>
+							<span class="title">品牌旗舰</span>
+							<span class="vue"></span>
+				</div>
+
+				<div class="last">
+					<ul>
+						<li>
+							<div class="eyu">
+									<div class="eyu-l">
+										<img src="img/cr.webp" alt="">
+									</div>
+									<div class="eyu-r">
+										<a href="#"><img src="img/nv1.webp" alt=""></a>
+										<a href="#"><img src="img/nv2.webp" alt=""></a>
+									</div>
+							</div>
+							<div class="eyu-b">
+								<div class="b-img"><img src="img/cro.webp" alt=""></div>
+								<div class="b-tet"><h6>鳄鱼桖服饰官方旗舰店</h6><p>4.4玩粉丝</p></div>
+							</div>
+						</li>
+						<li>
+							<div class="eyu">
+									<div class="eyu-l">
+										<img src="img/ma.webp" alt="">
+									</div>
+									<div class="eyu-r">
+										<a href="#"><img src="img/mat.webp" alt=""></a>
+										<a href="#"><img src="img/mab.webp" alt=""></a>
+									</div>
+							</div>
+							<div class="eyu-b">
+								<div class="b-img"><img src="img/MAS.webp" alt=""></div>
+								<div class="b-tet"><h6>玛莎利蒂官方旗舰店</h6><p>5.9玩粉丝</p></div>
+							</div>
+						</li>
+					<li>
+							<div class="eyu">
+									<div class="eyu-l">
+										<img src="img/qipi.webp" alt="">
+									</div>
+									<div class="eyu-r">
+										<a href="#"><img src="img/qipi1.webp" alt=""></a>
+										<a href="#"><img src="img/qipi2.webp" alt=""></a>
+									</div>
+							</div>
+							<div class="eyu-b">
+								<div class="b-img"><img src="img/qi.webp" alt=""></div>
+								<div class="b-tet"><h6>七匹狼官方旗舰店</h6><p>158.1玩粉丝</p></div>
+							</div>
+						</li>
+						<li>
+							<div class="eyu">
+									<div class="eyu-l">
+										<img src="img/ha.webp" alt="">
+									</div>
+									<div class="eyu-r">
+										<a href="#"><img src="img/ha1.webp" alt=""></a>
+										<a href="#"><img src="img/ha2.webp" alt=""></a>
+									</div>
+							</div>
+							<div class="eyu-b">
+								<div class="b-img"><img src="img/HAzz.webp" alt=""></div>
+								<div class="b-tet"><h6>hazzys官方旗舰店</h6><p>27.7玩粉丝</p></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="like">
+					 
+							<span class="title">一 猜你喜欢 一</span>
+					 
+				</div>
+
+				<div class="like-list">
+					<ul id="like-ul">
+							<li>
+								<a href="javascript:;">
+									<img src="img/HLA.webp" alt="">
+									<span class="item"><em>[热销]HLA/海澜之家水洗休闲裤春季热卖男装微弹修身裤子</em></em></span>
+									<span class="pp"><i>￥</i><span class="big">168</span><span>.0</span></span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="img/363.webp" alt="">
+									<span class="item"><em>[热销]New Balance/NB 373系列男鞋女鞋复古鞋跑步鞋</em></em></span>
+									<span class="pp"><i>￥</i><span class="big">363</span><span>.0</span></span>
+								</a>
+							</li>
+						<li>
+								<a href="javascript:;">
+									<img src="img/364.webp" alt="">
+									<span class="item"><em>[热销短款打底衫女长袖春装半高领毛衣女套头学生宽</em></em></span>
+									<span class="pp"><i>￥</i><span class="big">68</span><span>.0</span></span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="img/365.webp" alt="">
+									<span class="item"><em>[热销冬韩国魔术裤黑色打底裤加绒加厚紧身裤长裤子</em></em></span>
+									<span class="pp"><i>￥</i><span class="big">69</span><span>.0</span></span>
+								</a>
+							</li>
+								<li>
+								<a href="javascript:;">
+									<img src="img/HLA.webp" alt="">
+									<span class="item"><em>[热销]HLA/海澜之家水洗休闲裤春季热卖男装微弹修身裤子</em></em></span>
+									<span class="pp"><i>￥</i><span class="big">168</span><span>.0</span></span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="img/363.webp" alt="">
+									<span class="item"><em>[热销]New Balance/NB 373系列男鞋女鞋复古鞋跑步鞋</em></em></span>
+									<span class="pp"><i>￥</i><span class="big">363</span><span>.0</span></span>
+								</a>
+							</li>
+						<li>
+								<a href="javascript:;">
+									<img src="img/364.webp" alt="">
+									<span class="item"><em>[热销短款打底衫女长袖春装半高领毛衣女套头学生宽</em></em></span>
+									<span class="pp"><i>￥</i><span class="big">68</span><span>.0</span></span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="img/365.webp" alt="">
+									<span class="item"><em>[热销冬韩国魔术裤黑色打底裤加绒加厚紧身裤长裤子</em></em></span>
+									<span class="pp"><i>￥</i><span class="big">69</span><span>.0</span></span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="img/HLA.webp" alt="">
+									<span class="item"><em>[热销]HLA/海澜之家水洗休闲裤春季热卖男装微弹修身裤子</em></em></span>
+									<span class="pp"><i>￥</i><span class="big">168</span><span>.0</span></span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="img/363.webp" alt="">
+									<span class="item"><em>[热销]New Balance/NB 373系列男鞋女鞋复古鞋跑步鞋</em></em></span>
+									<span class="pp"><i>￥</i><span class="big">363</span><span>.0</span></span>
+								</a>
+							</li>
+						<li>
+								<a href="javascript:;">
+									<img src="img/364.webp" alt="">
+									<span class="item"><em>[热销短款打底衫女长袖春装半高领毛衣女套头学生宽</em></em></span>
+									<span class="pp"><i>￥</i><span class="big">68</span><span>.0</span></span>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<img src="img/365.webp" alt="">
+									<span class="item"><em>[热销冬韩国魔术裤黑色打底裤加绒加厚紧身裤长裤子</em></em></span>
+									<span class="pp"><i>￥</i><span class="big">69</span><span>.0</span></span>
+								</a>
+							</li>
+					</ul>
+					 
+				</div>
+				</main>
+		</div>		 
+		</div>
+</div>
+
+	<script src="js/swiper.min.js"></script>
+	<script src="js/iscroll.js"></script>
+	<script src="js/index.js"></script>
+	 
+</body>
+</html>
