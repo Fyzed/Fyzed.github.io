@@ -1,0 +1,22 @@
+
+*{margin:0;padding:0;}
+
+body,html{height: 100%;width:100%;background-color: #eee;}
+header{height: 42px;width: 100%;line-height: 42px;border-bottom: 1px solid #c8c8c8;color: #000;
+		text-align: center;font-size: 16px;background-color: #f7f7f8;}
+
+form{margin-top: 10px;background-color: #fff; }
+.cen{width: 100%;height: 50px; line-height: 50px;padding-left:15px;display: flex;border-bottom:1px solid #ddd; }
+.cen span{display: inline-block;font-size: 16px;color: #6c6c6c;}
+.cen input{border:none;height: 100%;flex:1;outline: none;padding-left:15px;box-sizing: border-box;font-size: 16px;}
+.pos{position: relative;}
+.one{position: absolute;right: 160px;width: 1px;height: 17px;background: #bababa;top: 50%;margin-top:-8px;}
+.btn{position: absolute;top: 0;right:0;width: 150px;height: 50px;border:none;background: #fff;font-size: 16px;color: red;
+	outline: none;text-align: left;}
+.but{width: 100%;margin-top: 10px;height: height:48px;padding:0 3%;box-sizing: border-box;}
+.but>button{width: 100%;height: 100%;background-color: #f40;color: white;text-align: center;line-height: 48px;font-size: 16px;
+	border:none;border-radius: 5px;}
+.mf{margin:10px;}
+.mf a{text-decoration: none;color: #6c6c6c;font-size: 16px;}
+.bto{width: 100%;margin-top: 30px;text-align: center;}
+.bto a{color: #f40; text-decoration: none; border: 1px solid #f40; padding: 7px;font-size: 16px;border-radius: 5px;}

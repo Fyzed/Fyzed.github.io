@@ -1,0 +1,29 @@
+
+*{margin:0;padding:0;}
+a{text-decoration: none;}
+html,body{width: 100%;height:100%;background: #eee;}
+.wrap{width:100%;height:100%;}
+header{width: 100%;height: 42px;border-bottom: 1px solid #c1c1c5 ;background-color: #e6e6e6; padding: 3px 0;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 1px 8px rgba(0,0,0,.2);position: relative;}
+header h1{color: #333; margin: 0 auto;line-height: 42px;text-align: center;height: 42px;overflow: hidden; 
+		font-size: 20px;font-weight: 400;}
+header>button{position: absolute;padding:4px 10px;border:1px solid #c1c1c5;background-color: #e6e6e6;
+			width: auto;display: inline-block;top: 10px;font-size: 14px;left: 10px;
+			-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.8), 0 1px 0 rgba(255,255,255,.8);
+		border-top-left-radius: 6px;
+    	border-top-right-radius: 6px;
+   		border-bottom-left-radius: 6px;
+    	border-bottom-right-radius: 6px;}
+    	header>button a{color: #888;}
+form{width: 100%;margin-top: 10px;}
+.top{font-size: 14px;margin-left: 10px;}
+.for{padding:6px 0;}
+.city{padding:0 3%;width: 100%;box-sizing: border-box;height: 42px;line-height: 42px;font-size: 16px;
+	background-color: #fff;border-bottom: 1px solid #ddd;display: flex;}
+.dq span{width: 40%;height: 100%;}
+.dq select{width: 60%;height: 100%;border:none;outline: none;border:none;font-size: 16px;}
+.phone span{width: 20%;height: 100%;}
+.phone input{width: 80%;border:none;outline: none;}
+.btm{width: 100%;color: #6C6C6C;font-size: 14px;text-align: center;line-height: 1.5;}
+.btm a{color: red;}
+#icon{ font-size: 21px;left:15px;}
